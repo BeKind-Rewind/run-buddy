@@ -1,1 +1,2 @@
-# run-buddy
+# runbuddyproject
+run buddy site project
