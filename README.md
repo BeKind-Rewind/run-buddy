@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # runbuddyproject
 
 ## Purpose
@@ -16,3 +17,7 @@ https://lernantino.github.io/run-buddy/
 ## Contribution
 
 Made with ❤️ by Amanda Perry
+=======
+# Run Buddy Inc.
+run buddy site project
+>>>>>>> feature/contact-form
