@@ -12,6 +12,14 @@ body {
 /* HEADER / NAV BAR STYLES START */
 
 header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
   padding: 20px 35px;
   background-color: #39a6b2;
   display: flex;
@@ -51,6 +59,13 @@ header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
   font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+  background: #fec138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
 }
 
 /* HEADER / NAVBAR STYLES END */
@@ -95,6 +110,8 @@ section {
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -145,8 +162,14 @@ section {
   padding: 7px 15px;
   font-size: 16px;
   color: #024e76;
+  background-color: rgba(255, 255, 255, 0.75);
   width: 100%;
   margin-bottom: 15px;
+}
+
+.form-input:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
 }
 
 .hero-form label {
@@ -160,6 +183,10 @@ section {
   border-radius: 10px;
   padding: 10px 20px;
   font-size: 16px;
+}
+
+.hero-form button:hover {
+  background-color: #39a6b2;
 }
 
 /* HERO STYLES END */
@@ -209,11 +236,14 @@ section {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: 1px solid #39a6b2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.step:not(:last-child) {
+  border-bottom: 1px solid #39a6b2;
 }
 
 .step-img {
@@ -345,9 +375,15 @@ section {
   padding: 7px, 15px;
   font-size: 16px;
   color: #024e76;
+  background-color: rgba(255, 255, 255, 0.75);
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgba(255, 255, 255, 1.0);
+  outline: none;
 }
 
 .contact-form button {
@@ -359,6 +395,11 @@ section {
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+}
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
 }
 
 .contact-info a {
@@ -387,6 +428,7 @@ section {
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
 
   header h1 {
