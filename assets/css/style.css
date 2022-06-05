@@ -189,6 +189,10 @@ section {
   background-color: #39a6b2;
 }
 
+.checkbox-wrapper input, .rado-wrapper input {
+  opacity: 0;
+}
+
 /* HERO STYLES END */
 
 /* SECTION TITLE STYLES START */
