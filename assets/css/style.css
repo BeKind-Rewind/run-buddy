@@ -1,7 +1,7 @@
 /* Variables */
 :root {
   --border-blue: #39a6b2;
-  --RB-yellow: #fec138;
+  --RB-yellow: #fce138;
   --dark-blue: #024e76;
 }
 
@@ -24,7 +24,6 @@ header {
   top: 0;
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
-  background-position: center;
   background-attachment: fixed;
   background-position: 80%;
   padding: 20px 35px;
@@ -117,12 +116,12 @@ section {
 .hero {
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
-  background-position: center;
   background-attachment: fixed;
   background-position: 80%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .hero-cta {
@@ -163,8 +162,42 @@ section {
   margin: 5px 0 15px 0;
 }
 
+
+.form-input {
+  border: 1px solid var(--dark-blue);
+  border-radius: 10px;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: var(--dark-blue);
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-input:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+.hero-form label {
+  margin: 0 5px;
+}
+
+.hero-form button {
+  color: var(--RB-yellow);
+  background-color: var(--dark-blue);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
 .checkbox-wrapper input, .radio-wrapper input {
   opacity: 0;
+}
+
+.checkbox-wrapper label, .rado-wrapper label {
   position: relative;
   left: 10px;
   margin: 10px;
@@ -210,34 +243,14 @@ section {
   transform: rotate(-58deg);
 }
 
-.form-input {
-  border: 1px solid var(--dark-blue);
-  border-radius: 10px;
-  display: block;
-  padding: 7px 15px;
-  font-size: 16px;
-  color: var(--dark-blue);
-  background-color: rgba(255, 255, 255, 0.75);
-  width: 100%;
-  margin-bottom: 15px;
+.checkbox-wrapper input + label::after,
+.radio-wrapper input +label::after {
+  content: none;
 }
 
-.form-input:focus {
-  background-color: rgba(255, 255, 255, 1);
-  outline: none;
-}
-
-.hero-form label {
-  margin: 0 5px;
-}
-
-.hero-form button {
-  color: var(--RB-yellow);
-  background-color: var(--dark-blue);
-  border: none;
-  border-radius: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
+.checkbox-wrapper input:checked + label::after, 
+.radio-wrapper input:checked + label::after {
+  content: "";
 }
 
 .hero-form button:hover {
