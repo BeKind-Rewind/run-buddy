@@ -1,3 +1,9 @@
+:root {
+  --border-blue: #39a6b2;
+  --RB-yellow: #fec138;
+  --dark-blue: #024e76;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +11,7 @@
 }
 
 body {
-  color: #39a6b2;
+  color: var(--border-blue);
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -21,7 +27,7 @@ header {
   background-attachment: fixed;
   background-position: 80%;
   padding: 20px 35px;
-  background-color: #39a6b2;
+  background-color: var(--border-blue);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -33,13 +39,13 @@ header h1 {
   font-weight: bold;
   margin: 0;
   font-size: 36px;
-  color: #fce138;
+  color: var(--RB-yellow);
   z-index: 9999;
 }
 
 header a {
   text-decoration: none;
-  color: #fce138;
+  color: var(--RB-yellow);
 }
 
 header nav {
@@ -63,8 +69,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background: #fec138;
-  color: #024e76;
+  background: var(--RB-yellow);
+  color: var(--dark-blue);
   border-radius: 15px;
   text-shadow: none;
 }
@@ -74,7 +80,7 @@ header nav ul li a:hover {
 /* FOOTER STYLES START */
 
 footer {
-  background: #fce138;
+  background: var(--RB-yellow);
   padding: 40px 35px;
   display: flex;
   justify-content: space-between;
@@ -83,7 +89,7 @@ footer {
 }
 
 footer h2 {
-  color: #024e76;
+  color: var(--dark-blue);
   font-size: 30px;
   margin: 0;
 }
@@ -94,7 +100,7 @@ footer div {
 }
 
 footer a {
-  color: #024e76;
+  color: var(--dark-blue);
 }
 
 /* END FOOTER STYLES */
@@ -132,18 +138,18 @@ section {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-style: italic;
   font-size: 55px;
-  color: #fce138;
+  color: var(--RB-yellow);
 }
 
 .hero-form {
   /* add shadow to the box */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border: 3px solid #024e76;
+  border: 3px solid var(--dark-blue);
   border-radius: 15px;
   background-color: rgba(252, 225, 56, 0.8);
   padding: 20px;
   width: 40%;
-  color: #024e76;
+  color: var(--dark-blue);
   margin: 3.5%;
 }
 
@@ -169,7 +175,7 @@ section {
   height: 20px;
   width: 20px;
   background: rgba(255, 255, 255, 0.75);
-  border: 1px solid #024e76;
+  border: 1px solid var(--dark-blue);
   position: absolute;
   top: -4px;
   left: -30px;
@@ -184,19 +190,19 @@ section {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #024e76;
+  background: var(--dark-blue);
   position: absolute;
   left: -29px;
   top: -3px;
-  background-image: radial-gradient(circle, #39a6b2, #024e76);
+  background-image: radial-gradient(circle, var(--border-blue), var(--dark-blue));
 }
 
 .checkbox-wrapper label::after {
   content: "";
   height: 6px;
   width: 14px;
-  border-left: 2px solid #024e76;
-  border-bottom: 2px solid #024e76;
+  border-left: 2px solid var(--dark-blue);
+  border-bottom: 2px solid var(--dark-blue);
   position: absolute;
   left: -26px;
   top: 1px;
@@ -204,12 +210,12 @@ section {
 }
 
 .form-input {
-  border: 1px solid #024e76;
+  border: 1px solid var(--dark-blue);
   border-radius: 10px;
   display: block;
   padding: 7px 15px;
   font-size: 16px;
-  color: #024e76;
+  color: var(--dark-blue);
   background-color: rgba(255, 255, 255, 0.75);
   width: 100%;
   margin-bottom: 15px;
@@ -225,8 +231,8 @@ section {
 }
 
 .hero-form button {
-  color: #fce138;
-  background-color: #024e76;
+  color: var(--RB-yellow);
+  background-color: var(--dark-blue);
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
@@ -234,7 +240,7 @@ section {
 }
 
 .hero-form button:hover {
-  background-color: #39a6b2;
+  background-color: var(--border-blue);
 }
 
 /* HERO STYLES END */
@@ -243,7 +249,7 @@ section {
 
 .section-title {
   font-size: 48px;
-  color: #024e76;
+  color: var(--dark-blue);
   margin: 0 auto 35px auto;
   padding-bottom: 20px;
   text-align: center;
@@ -252,11 +258,11 @@ section {
 }
 
 .primary-border {
-  border-color: #fce138;
+  border-color: var(--RB-yellow);
 }
 
 .secondary-border {
-  border-color: #39a6b2;
+  border-color: var(--border-blue);
 }
 
 /* SECTION TITLE STYLES END */
@@ -265,7 +271,7 @@ section {
 
 .intro p {
   line-height: 1.7;
-  color: #39a6b2;
+  color: var(--border-blue);
   width: 80%;
   font-size: 20px;
   margin: 0 auto;
@@ -277,7 +283,7 @@ section {
 /* WHAT YOU DO STYLES START */
 
 .steps {
-  background: #fce138;
+  background: var(--RB-yellow);
 }
 
 .step {
@@ -291,7 +297,7 @@ section {
 }
 
 .step:not(:last-child) {
-  border-bottom: 1px solid #39a6b2;
+  border-bottom: 1px solid var(--border-blue);
 }
 
 .step-img {
@@ -300,7 +306,7 @@ section {
 }
 
 .step h3 {
-  color: #024e76;
+  color: var(--dark-blue);
   font-size: 46px;
   flex: 1 30%;
 }
@@ -321,14 +327,14 @@ section {
 }
 
 .step-text p {
-  color: #39a6b2;
+  color: var(--border-blue);
   font-size: 18px;
 }
 
 .step-text h4 {
   font-size: 26px;
   line-height: 1.5;
-  color: #024e76;
+  color: var(--dark-blue);
 }
 
 /* WHAT YOU DO STYLES END */
@@ -346,8 +352,8 @@ section {
 .trainer {
   flex: 1;
   margin: 20px;
-  background: #024e76;
-  color: #fce138;
+  background: var(--dark-blue);
+  color: var(--RB-yellow);
 }
 
 .trainer img {
@@ -378,11 +384,11 @@ section {
 /* REACH OUT STYLES START */
 
 .contact {
-  background: #024e76;
+  background: var(--dark-blue);
 }
 
 .contact h2 {
-  color: #fce138;
+  color: var(--RB-yellow);
 }
 
 .contact-info {
@@ -405,7 +411,7 @@ section {
 }
 
 .contact-info h3 {
-  color: #fce138;
+  color: var(--RB-yellow);
   font-size: 32px;
 }
 
@@ -417,12 +423,12 @@ section {
 }
 
 .contact-form input, .contact-form textarea {
-  border: 1px solid #024e76;
+  border: 1px solid var(--dark-blue);
   border-radius: 10px;
   display: block;
   padding: 7px, 15px;
   font-size: 16px;
-  color: #024e76;
+  color: var(--dark-blue);
   background-color: rgba(255, 255, 255, 0.75);
   width: 100%;
   margin-bottom: 15px;
@@ -438,20 +444,20 @@ section {
   width: 100%;
   border: none;
   border-radius: 10px;
-  background: #fce138;
-  color: #024e76;
+  background: var(--RB-yellow);
+  color: var(--dark-blue);
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
 }
 
 .contact-form button:hover {
-  color: #fce138;
-  background: #39a6b2;
+  color: var(--RB-yellow);
+  background: var(--border-blue);
 }
 
 .contact-info a {
-  color: #fce138;
+  color: var(--RB-yellow);
 }
 
 /* REACH OUT STYLES END */
